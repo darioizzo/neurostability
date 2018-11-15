@@ -81,3 +81,21 @@ def rkf45_gduals(f, t0, y0, tf, tol=1e-6, h0=1e-3):
         retval.append(_rkf45_stepper_gdual(f, t0, retval[-1], h))
     return t, np.array(retval)
 
+# This is a simple Runga Kutta fourth order numerical integrator with fixed step.
+# It is programmed to work both with floats and gduals. It infers the type from the initial conditions
+def rk4_fixed(f, t0, y0, tf, N):
+    h = (tf - t0) / N
+    t = np.arange(t0,tf,h)
+    y = np.array([[y0[0]] * np.size(y0)] * N)
+    y[0] = y0
+    for n in progressbar.progressbar(range(N - 1)):
+        xi1 = y[n]
+        f1 = f(t[n], xi1)
+        xi2 = y[n] + (h/2.)*f1
+        f2 = f(t[n+1], xi2)
+        xi3 = y[n] + (h/2.)*f2
+        f3 = f(t[n+1], xi3)
+        xi4 = y[n] + h*f3
+        f4 = f(t[n+1], xi4)
+        y[n+1] = y[n] + (h/6.)*(f1 + 2*f2 + 2*f3 + f4)
+    return y
