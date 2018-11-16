@@ -4,10 +4,11 @@ This project contains all the python code and pickled network data to reproduce 
 Dario Izzo, Dharmesh Tailor and Thomas Vasileiou: "On the stability analysis of optimal state feedbacks as represented by deep neural models"
 
 # Guidance and Control Network (G&CNET)
-**Definition:**: A G&CNET (Guidance and Control Network) is a type of neuro controller, in particular a deep,artificial, feed forward neural network trained on state-action pairs representing the optimal control actions, with respect to the performance index:
+**Definition:**: A G&CNET (Guidance and Control Network) is a type of neuro controller, in particular a deep, artificial, feed forward neural network trained on state-action pairs representing the optimal control actions, with respect to the performance index:
 <p align="center">
 <a href="https://www.codecogs.com/eqnedit.php?latex=J&space;=&space;\int_{t_0}^{t_f}&space;l(\mathbf&space;x,&space;\mathbf&space;u,&space;t)&space;dt" target="_blank"><img src="https://latex.codecogs.com/gif.latex?J&space;=&space;\int_{t_0}^{t_f}&space;l(\mathbf&space;x,&space;\mathbf&space;u,&space;t)&space;dt" title="J = \int_{t_0}^{t_f} l(\mathbf x, \mathbf u, t) dt" /></a>
 </p>
+An example of a GECNET architecture is given below, note the softplus units giving continuity properties to the resulting actions.
 
 <p align="center">
   <img align="middle" src="./assets/gecnet.png" alt="GECNET neurocontroller for the BEBOP drone" width="500" />
