@@ -8,6 +8,8 @@ Dario Izzo, Dharmesh Tailor and Thomas Vasileiou: "On the stability analysis of 
 <p align="center">
 <a href="https://www.codecogs.com/eqnedit.php?latex=J&space;=&space;\int_{t_0}^{t_f}&space;l(\mathbf&space;x,&space;\mathbf&space;u,&space;t)&space;dt" target="_blank"><img src="https://latex.codecogs.com/gif.latex?J&space;=&space;\int_{t_0}^{t_f}&space;l(\mathbf&space;x,&space;\mathbf&space;u,&space;t)&space;dt" title="J = \int_{t_0}^{t_f} l(\mathbf x, \mathbf u, t) dt" /></a>
 </p>
+In other words a G&CNET is a neural optimal feedback for a non linear dynamical system.
+
 An example for a GECNET architecture is given below, note the softplus units giving continuity properties to the resulting actions.
 
 <p align="center">
