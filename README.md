@@ -3,7 +3,7 @@ This project contains all the python code and pickled network data to reproduce 
 
 Dario Izzo, Dharmesh Tailor and Thomas Vasileiou: "On the stability analysis of optimal state feedbacks as represented by deep neural models"
 
-**Usage**: clone the repository and run the notebooks in Jupyter after havin installed (```pip``` or ```conda```) the requested dependencies.
+**Usage**: clone the repository and run the notebooks in Jupyter after having installed (```pip``` or ```conda```) the requested dependencies.
 
 # Guidance and Control Network (G&CNET)
 **Definition:**: A G&CNET (Guidance and Control Network) is a type of neuro controller, in particular a deep, artificial, feed forward neural network trained on state-action pairs representing the optimal control actions, with respect to the performance index:
