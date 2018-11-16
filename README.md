@@ -26,7 +26,7 @@ For example a GECNET can perform **real time optimal manouvre on board** of a BE
   <img align="middle" src="./assets/quad_traj.gif" alt="GECNET controlling the BEBOP drone" width="500" />
 </p>
 
-# Stability of G&CNETS Neurocontrollers
+# Linear Stability of G&CNETS Neurocontrollers
 These deep neural networks are trained to imitate the optimal response and, in the notebooks here available, are loaded from pickled data. The system dynamics can then be linearized around an equilibrium point (hovering, in the case of a BEBOP drone) using the network gradient information coming from e.g. backpropagation. **Stability and time delayed analysis can thus be performed** and, for example, the root locus for the time delay obtained (and thus a stability margin):
 
 <p align="center">
