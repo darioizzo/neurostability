@@ -2,7 +2,18 @@
 This project contains all the python code and pickled network data to reproduce the reuslts in the paper:
 "On the stability analysis of optimal state feedbacks as represented by deep neural models"
 
-# Bebop rajectories controlled by a Guidance and Control Netowrk (G&CNET)
+# Guidance and Control Network (G&CNET)
+**Definition:**: A G&CNET (Guidance and Control Network) is a type of neuro controller, in particular a deep,artificial, feed forward neural network trained on state-action pairs representing the optimal control actions, with respect to the performance index:
+<p align="center">
+<a href="https://www.codecogs.com/eqnedit.php?latex=J&space;=&space;\int_{t_0}^{t_f}&space;l(\mathbf&space;x,&space;\mathbf&space;u,&space;t)&space;dt" target="_blank"><img src="https://latex.codecogs.com/gif.latex?J&space;=&space;\int_{t_0}^{t_f}&space;l(\mathbf&space;x,&space;\mathbf&space;u,&space;t)&space;dt" title="J = \int_{t_0}^{t_f} l(\mathbf x, \mathbf u, t) dt" /></a>
+</p>
+
+<p align="center">
+  <img align="middle" src="./assets/gecnet.png" alt="GECNET neurocontroller for the BEBOP drone" width="500" />
+</p>
+
+For example a GECNET can perform real time optimal manouvre on board of a BEBOP Parrot drone:
+
 <p align="center">
   <img align="middle" src="./assets/trajs.png" alt="GECNET neurocontroller for the BEBOP drone" width="500" />
 </p>
@@ -12,7 +23,7 @@ This project contains all the python code and pickled network data to reproduce 
 </p>
 
 # Linearization of Neurocontrollers
-The deep neural networks are trained to imitate the optimal power optimal response and are here loaded from pickled data. The dynamics can then be linearized around the equilibrium point using the network gradient information coming from e.g. backpropagation. Stability analysis and time delayed analysis can thus be performed and, for example, the root locus for the time delay obtained (and thus a stability margin):
+These deep neural networks are trained to imitate the optimal power optimal response and, in the notebooks here available, are loaded from pickled data. The dynamics can then be linearized around the equilibrium point using the network gradient information coming from e.g. backpropagation. Stability analysis and time delayed analysis can thus be performed and, for example, the root locus for the time delay obtained (and thus a stability margin):
 
 <p align="center">
   <img align="middle" src="./assets/locusrootN_3_100.png" alt="Time delay for a GECNET controlling the BEBOP drone" width="300" />
