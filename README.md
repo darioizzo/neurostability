@@ -1,6 +1,7 @@
 # Stability study of deep networks controlling nonlinear ODEs
 This project contains all the python code and pickled network data to reproduce the reuslts in the paper:
-"On the stability analysis of optimal state feedbacks as represented by deep neural models"
+
+Dario Izzo, Dharmesh Tailor and Thomas Vasileiou: "On the stability analysis of optimal state feedbacks as represented by deep neural models"
 
 # Guidance and Control Network (G&CNET)
 **Definition:**: A G&CNET (Guidance and Control Network) is a type of neuro controller, in particular a deep,artificial, feed forward neural network trained on state-action pairs representing the optimal control actions, with respect to the performance index:
