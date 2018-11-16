@@ -24,7 +24,7 @@ For example a GECNET can perform real time optimal manouvre on board of a BEBOP 
   <img align="middle" src="./assets/quad_traj.gif" alt="GECNET controlling the BEBOP drone" width="500" />
 </p>
 
-# Linearization of Neurocontrollers
+# Linearization of GECNETS Neurocontrollers
 These deep neural networks are trained to imitate the optimal power optimal response and, in the notebooks here available, are loaded from pickled data. The dynamics can then be linearized around the equilibrium point using the network gradient information coming from e.g. backpropagation. Stability analysis and time delayed analysis can thus be performed and, for example, the root locus for the time delay obtained (and thus a stability margin):
 
 <p align="center">
@@ -33,7 +33,7 @@ These deep neural networks are trained to imitate the optimal power optimal resp
 
 
 # High Order Taylor maps
-The ODEs describing the neurocontrolled trajectory is then numerically integrated and its result xpanded into a high order Taylor map (note that backpropagation cannot be used here as the derivative order is ~7). The map represents the optimal dynamics close to a nominal trajectory. Convergence radius of the Taylor maps is also studied.
+The ODEs describing the neurocontrolled trajectory is then numerically integrated and its result expanded into a high order Taylor map (note that backpropagation cannot be used here as the derivative order is ~7). The map represents the optimal dynamics close to a nominal trajectory. Convergence radius of the Taylor maps is also studied.
 
 <p align="center">
   <img align="middle" src="./assets/taylormodel.png" alt="Time delay for a GECNET controlling the BEBOP drone" width="500" />
