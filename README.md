@@ -34,5 +34,5 @@ These deep neural networks are trained to imitate the optimal power optimal resp
 The ODEs describing the neurocontrolled trajectory is then numerically integrated and its result xpanded into a high order Taylor map (note that backpropagation cannot be used here as the derivative order is ~7). The map represents the optimal dynamics close to a nominal trajectory. Convergence radius of the Taylor maps is also studied.
 
 <p align="center">
-  <img align="middle" src="./assets/taylormodel.png" alt="Time delay for a GECNET controlling the BEBOP drone" width="300" />
+  <img align="middle" src="./assets/taylormodel.png" alt="Time delay for a GECNET controlling the BEBOP drone" width="500" />
 </p>
