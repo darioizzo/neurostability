@@ -25,7 +25,7 @@ For example a GECNET can perform real time optimal manouvre on board of a BEBOP 
 </p>
 
 # Stability of G&CNETS Neurocontrollers
-These deep neural networks are trained to imitate the optimal response and, in the notebooks here available, are loaded from pickled data. The system dynamics can then be linearized around the equilibrium point using the network gradient information coming from e.g. backpropagation. Stability analysis and time delayed analysis can thus be performed and, for example, the root locus for the time delay obtained (and thus a stability margin):
+These deep neural networks are trained to imitate the optimal response and, in the notebooks here available, are loaded from pickled data. The system dynamics can then be linearized around an equilibrium point using the network gradient information coming from e.g. backpropagation. Stability analysis and time delayed analysis can thus be performed and, for example, the root locus for the time delay obtained (and thus a stability margin):
 
 <p align="center">
   <img align="middle" src="./assets/locusrootN_3_100.png" alt="Time delay for a GECNET controlling the BEBOP drone" width="300" />
@@ -33,7 +33,7 @@ These deep neural networks are trained to imitate the optimal response and, in t
 
 
 # Stability of a G&CNET nominal trajectory
-The ODEs describing the neurocontrolled trajectory is then numerically integrated and its result expanded into a high order Taylor map (note that backpropagation cannot be used here as the derivative order is ~7, so differential algebraic techniques are used instead). The map represents the optimal dynamics close to a nominal trajectory and can thus be used to study and proove its stability. Convergence radius of the Taylor maps is also studied.
+The ODEs describing the neurocontrolled trajectory is then numerically integrated and its result expanded into a high order Taylor map (note that backpropagation cannot be used here as the derivative order is ~7, so differential algebraic techniques are used instead). The map represents the optimal dynamics close to a nominal trajectory and can thus be used to study and prove its stability. Convergence radius of the Taylor maps is also studied.
 
 <p align="center">
   <img align="middle" src="./assets/taylormodel.png" alt="Time delay for a GECNET controlling the BEBOP drone" width="500" />
