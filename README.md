@@ -1,7 +1,7 @@
 # Stability study of deep networks controlling nonlinear ODEs
 This project contains all the python code and pickled network data to reproduce the results in the paper:
 
-Dario Izzo, Dharmesh Tailor and Thomas Vasileiou: "On the stability analysis of optimal state feedbacks as represented by deep neural models"
+Dario Izzo, Dharmesh Tailor and Thomas Vasileiou: "On the stability analysis of optimal state feedbacks as represented by deep neural models" - [https://arxiv.org/abs/1812.02532]
 
 **Usage**: clone the repository and run the notebooks in Jupyter after having installed (```pip``` or ```conda```) the requested dependencies.
 
